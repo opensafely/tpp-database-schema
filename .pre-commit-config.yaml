@@ -21,6 +21,15 @@ repos:
     hooks:
       - id: isort
 
+  - repo: https://github.com/sqlfluff/sqlfluff
+    rev: 1.3.2
+    # This hook filters sql files, so if there aren't sql files in the staging
+    # area, then `pre-commit run` will skip it. Indeed, `pre-commit run
+    # --all-files` will skip it too, as the `--all-files` argument doesn't work
+    # as documented.
+    hooks:
+      - id: sqlfluff-fix
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.1.0
     hooks:
