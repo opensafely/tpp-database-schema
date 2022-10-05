@@ -32,3 +32,5 @@ skip_glob = [".direnv", "venv", ".venv"]
 
 [tool.sqlfluff.core]
 dialect = "tsql"
+# https://docs.sqlfluff.com/en/stable/rules.html
+exclude_rules = "L044"
