@@ -96,7 +96,15 @@ htmlcov
 # IDEs
 .idea/
 
-
 # Virtual environments
 .venv/
+venv/
+
+# OpenSAFELY research template
+*~
+model.log
+*/input.csv
+__pycache__
+output/*
+metadata/*
 venv/

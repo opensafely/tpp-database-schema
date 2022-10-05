@@ -7,10 +7,9 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
-      - uses: "actions/setup-python@v4"
+      - uses: actions/setup-python@v4
         with:
           python-version: "3.10"
           cache: "pip"
@@ -21,24 +20,13 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
-      - uses: "actions/setup-python@v4"
+      - uses: actions/setup-python@v4
         with:
           python-version: "3.10"
           cache: "pip"
           cache-dependency-path: requirements.*.txt
       - uses: extractions/setup-just@v1
       - name: Run tests
-#       env:  # Add environment variables required for tests
-        run: |
-          just test
-
-  lint-dockerfile:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: hadolint/hadolint-action@f988afea3da57ee48710a9795b6bb677cc901183  # v2.1.0
-        with:
-          failure-threshold: error
+        run: just test
