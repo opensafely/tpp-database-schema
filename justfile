@@ -107,6 +107,6 @@ fix: devenv
     $BIN/sqlfluff fix .
 
 
-# Run the dev project
+# Run JupyterLab
 run: devenv
-    echo "Not implemented yet"
+    opensafely jupyter
