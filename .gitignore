@@ -108,3 +108,4 @@ __pycache__
 output/*
 metadata/*
 venv/
+.ipynb_checkpoints/
