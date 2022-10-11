@@ -7,4 +7,5 @@ SELECT
     Scale,
     MaxLength,
     IsNullable
-FROM OpenSAFELYSchemaInformation;
+FROM OpenSAFELYSchemaInformation
+WHERE DataSource != '';
