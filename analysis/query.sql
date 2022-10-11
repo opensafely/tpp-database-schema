@@ -8,4 +8,5 @@ SELECT
     MaxLength,
     IsNullable
 FROM OpenSAFELYSchemaInformation
-WHERE DataSource != '';
+WHERE DataSource != ''
+ORDER BY DataSource, TableName, ColumnName;
