@@ -10,5 +10,5 @@ actions:
         --output output/rows.csv
         analysis/query.sql
     outputs:
-      highly_sensitive:
+      moderately_sensitive:
         rows: output/rows.csv
