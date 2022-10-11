@@ -12,3 +12,28 @@ actions:
     outputs:
       moderately_sensitive:
         rows: output/rows.csv
+
+  make-html-reports:
+    # --execute
+    #   execute notebooks before converting them to HTML reports
+    # --no-input
+    #   exclude input cells and output prompts from HTML reports
+    # --to=html
+    #   convert notebooks to HTML reports (not e.g. to PDF reports)
+    # --template basic
+    #   use the basic (unstyled) template for HTML reports
+    # --output-dir=output
+    #   write HTML reports to the `output` directory
+    run: >
+      python:latest jupyter nbconvert
+        --execute
+        --no-input
+        --to=html
+        --template basic
+        --output-dir=output
+        analysis/*.ipynb
+    needs:
+      - query
+    outputs:
+      moderately_sensitive:
+        reports: output/*.html
