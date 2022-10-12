@@ -108,5 +108,5 @@ fix: devenv
 
 
 # Run JupyterLab
-run: devenv
-    opensafely jupyter
+run *ARGS: devenv
+    opensafely jupyter {{ ARGS }}
