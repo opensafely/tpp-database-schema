@@ -140,10 +140,6 @@ distlib==0.3.2 \
     --hash=sha256:106fef6dc37dd8c0e2c0a60d3fca3e77460a48907f335fa28420463a6f799736 \
     --hash=sha256:23e223426b28491b1ced97dc3bbe183027419dfc7982b4fa2f05d5f3ff10711c
     # via virtualenv
-exceptiongroup==1.0.0 \
-    --hash=sha256:2ac84b496be68464a2da60da518af3785fff8b7ec0d090a581604bc870bdee41 \
-    --hash=sha256:affbabf13fb6e98988c38d9c5650e701569fe3c1de3233cfb61c5f33774690ad
-    # via pytest
 executing==1.1.1 \
     --hash=sha256:236ea5f059a38781714a8bfba46a70fad3479c2f552abee3bbafadc57ed111b8 \
     --hash=sha256:b0d7f8dcc2bac47ce6e39374397e7acecea6fdc380a6d5323e26185d70f38ea8
@@ -159,9 +155,9 @@ flake8==4.0.1 \
     #   -r requirements.dev.in
     #   flake8-builtins
     #   flake8-no-pep420
-flake8-builtins==2.0.0 \
-    --hash=sha256:39bfa3badb5e8d22f92baf4e0ea1b816707245233846932d6b13e81fc6f673e8 \
-    --hash=sha256:98833fa16139a75cd4913003492a9bd9a61c6f8ac146c3db12a2ebaf420dade3
+flake8-builtins==2.0.1 \
+    --hash=sha256:5aeb420130efe8acbdaf8708a582492413293a3ca25653518f687937879650a5 \
+    --hash=sha256:a5b9ca9cbc921c4455ea02e2e9963c990ac66d028c15b654625e012a1e3bbb4d
     # via -r requirements.dev.in
 flake8-implicit-str-concat==0.3.0 \
     --hash=sha256:a89ebc50567790fb7b83e032ed4014ae0db70e35d89e269c3323967135023600 \
@@ -501,11 +497,7 @@ toml==0.10.2 \
 tomli==1.1.0 \
     --hash=sha256:33d7984738f8bb699c9b0a816eb646a8178a69eaa792d258486776a5d21b8ca5 \
     --hash=sha256:f4a182048010e89cbec0ae4686b21f550a7f2903f665e34a6de58ec15424f919
-    # via
-    #   black
-    #   build
-    #   pep517
-    #   pytest
+    # via pep517
 tqdm==4.64.1 \
     --hash=sha256:5f4f682a004951c1b450bc753c710e9280c5746ce6ffedee253ddbcbf54cf1e4 \
     --hash=sha256:6fee160d6ffcd1b1c68c65f14c829c22832bc401726335ce92c52d395944a6a1
