@@ -140,10 +140,6 @@ distlib==0.3.2 \
     --hash=sha256:106fef6dc37dd8c0e2c0a60d3fca3e77460a48907f335fa28420463a6f799736 \
     --hash=sha256:23e223426b28491b1ced97dc3bbe183027419dfc7982b4fa2f05d5f3ff10711c
     # via virtualenv
-exceptiongroup==1.0.0 \
-    --hash=sha256:2ac84b496be68464a2da60da518af3785fff8b7ec0d090a581604bc870bdee41 \
-    --hash=sha256:affbabf13fb6e98988c38d9c5650e701569fe3c1de3233cfb61c5f33774690ad
-    # via pytest
 executing==1.1.1 \
     --hash=sha256:236ea5f059a38781714a8bfba46a70fad3479c2f552abee3bbafadc57ed111b8 \
     --hash=sha256:b0d7f8dcc2bac47ce6e39374397e7acecea6fdc380a6d5323e26185d70f38ea8
@@ -475,9 +471,9 @@ six==1.16.0 \
     --hash=sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926 \
     --hash=sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
     # via virtualenv
-sqlfluff==1.3.2 \
-    --hash=sha256:2a291d9c2ff742471c690c4bd1e760a483100fbcba23f330a61e7888f67c0c3f \
-    --hash=sha256:538707af21d1e1f15a64512255b502eaf6d12d1b6edfd3b0b6cb979fcaec07b4
+sqlfluff==1.4.1 \
+    --hash=sha256:b65071162c70a0424dd2fc53edd4d76633293feb7690b32e0ed02d10c5a0b66c \
+    --hash=sha256:cc16f31b1213e42fde1d6d80d66b5f54553ea269165602cc8e4e51484f15bb2d
     # via -r requirements.dev.in
 stack-data==0.5.1 \
     --hash=sha256:5120731a18ba4c82cefcf84a945f6f3e62319ef413bfc210e32aca3a69310ba2 \
@@ -501,11 +497,7 @@ toml==0.10.2 \
 tomli==1.1.0 \
     --hash=sha256:33d7984738f8bb699c9b0a816eb646a8178a69eaa792d258486776a5d21b8ca5 \
     --hash=sha256:f4a182048010e89cbec0ae4686b21f550a7f2903f665e34a6de58ec15424f919
-    # via
-    #   black
-    #   build
-    #   pep517
-    #   pytest
+    # via pep517
 tqdm==4.64.1 \
     --hash=sha256:5f4f682a004951c1b450bc753c710e9280c5746ce6ffedee253ddbcbf54cf1e4 \
     --hash=sha256:6fee160d6ffcd1b1c68c65f14c829c22832bc401726335ce92c52d395944a6a1
