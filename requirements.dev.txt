@@ -462,9 +462,9 @@ six==1.16.0 \
     --hash=sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926 \
     --hash=sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
     # via virtualenv
-sqlfluff==1.4.2 \
-    --hash=sha256:6182c8523b46b133bd4826462070fdcf72349e45906ad755813fb5b0f6cdcb4b \
-    --hash=sha256:e23dc5f709e16e7a9788f9f65c65f9ac8b9b564bb4437c4971d673969a99b0bd
+sqlfluff==1.4.4 \
+    --hash=sha256:5b7fa6b790cdb610275f1595153e1a4c309175efe63a795f4ead26b3c0703fc4 \
+    --hash=sha256:837e7fef6a1d7420e91f3bca439e9017d5e795dd373147e2ef79f869ea43962d
     # via -r requirements.dev.in
 stack-data==0.5.1 \
     --hash=sha256:5120731a18ba4c82cefcf84a945f6f3e62319ef413bfc210e32aca3a69310ba2 \
