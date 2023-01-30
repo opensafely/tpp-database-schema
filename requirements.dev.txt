@@ -170,9 +170,9 @@ ipython==8.5.0 \
     --hash=sha256:097bdf5cd87576fd066179c9f7f208004f7a6864ee1b20f37d346c0bcb099f84 \
     --hash=sha256:6f090e29ab8ef8643e521763a4f1f39dc3914db643122b1e9d3328ff2e43ada2
     # via black
-isort==5.11.4 \
-    --hash=sha256:6db30c5ded9815d813932c04c2f85a360bcdd35fed496f4d8f35495ef0a261b6 \
-    --hash=sha256:c033fd0edb91000a7f09527fe5c75321878f98322a77ddcc81adbd83724afb7b
+isort==5.12.0 \
+    --hash=sha256:8bef7dde241278824a6d83f44a544709b065191b95b6e50894bdc722fcba0504 \
+    --hash=sha256:f84c2818376e66cf843d497486ea8fed8700b340f308f076c6fb1229dff318b6
     # via -r requirements.dev.in
 jedi==0.18.1 \
     --hash=sha256:637c9635fcf47945ceb91cd7f320234a7be540ded6f3e99a50cb6febdfd1ba8d \
