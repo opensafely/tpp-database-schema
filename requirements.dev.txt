@@ -467,9 +467,9 @@ six==1.16.0 \
     --hash=sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926 \
     --hash=sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
     # via asttokens
-sqlfluff==2.2.0 \
-    --hash=sha256:0187da866f232add88038811c1b959af5176bfe2e2ded63a920dd1e413e65f2a \
-    --hash=sha256:abe02f237cd228e0385233c79937750b3d00cbb58dfe2c96191cc1dd7cb8855d
+sqlfluff==2.2.1 \
+    --hash=sha256:86b3f85388e10c69eeea12ccaa169f66248e9240d57f22b66e84048cc7333b08 \
+    --hash=sha256:93b4c49a6640e15fa5fddbc022d0544675b9d4ac382d68da029d07c713cb6e7e
     # via -r requirements.dev.in
 stack-data==0.5.1 \
     --hash=sha256:5120731a18ba4c82cefcf84a945f6f3e62319ef413bfc210e32aca3a69310ba2 \
