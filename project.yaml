@@ -9,10 +9,12 @@ actions:
       sqlrunner:latest
         --output output/rows.csv
         --dummy-data-file analysis/dummy_rows.csv
+        --log-file output/log.json
         analysis/query.sql
     outputs:
       moderately_sensitive:
         rows: output/rows.csv
+        log: output/log.json
 
   make-html-reports:
     # --execute
