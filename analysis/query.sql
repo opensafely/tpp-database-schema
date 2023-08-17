@@ -1,5 +1,5 @@
 SELECT
-    DataSource,
+    IIF(LEN(DataSource) > 0, DataSource, 'Other') AS DataSource,
     TableName,
     ColumnName,
     ColumnType,
@@ -9,6 +9,5 @@ SELECT
     IsNullable
 FROM OpenSAFELYSchemaInformation
 WHERE
-    DataSource != ''
-    AND DataSource != 'ONS_CIS'
+    DataSource != 'ONS_CIS'
 ORDER BY DataSource, TableName, ColumnName;
