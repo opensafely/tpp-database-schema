@@ -1,1 +1,1 @@
-DataSource,TableName,ColumnName,ColumnType,Precision,Scale,MaxLength,IsNullable
+DataSource,TableName,ColumnName,ColumnType,Precision,Scale,MaxLength,IsNullable,CollationName

@@ -8,7 +8,8 @@ SELECT
     Precision,
     Scale,
     MaxLength,
-    IsNullable
+    IsNullable,
+    CollationName
 FROM OpenSAFELYSchemaInformation
 WHERE
     DataSource != 'ONS_CIS'
