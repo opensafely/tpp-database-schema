@@ -13,4 +13,4 @@ SELECT
 FROM OpenSAFELYSchemaInformation
 WHERE
     DataSource != 'ONS_CIS'
-ORDER BY DataSource, TableName, ColumnName;
+ORDER BY DataSource, TableName;
