@@ -8,7 +8,6 @@ actions:
     run: >
       sqlrunner:latest
         --output output/rows.csv
-        --dummy-data-file analysis/dummy_rows.csv
         --log-file output/log.json
         analysis/query.sql
     outputs:
