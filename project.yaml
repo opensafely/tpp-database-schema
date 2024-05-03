@@ -15,6 +15,17 @@ actions:
         rows: output/rows.csv
         log: output/log.json
 
+  data_dictionary_query:
+    run: >
+      sqlrunner:latest
+        --output output/data_dictionary.csv
+        --log-file output/data_dictionary_log.json
+        analysis/data_dictionary_query.sql
+    outputs:
+      moderately_sensitive:
+        rows: output/data_dictionary.csv
+        log: output/data_dictionary_log.json
+
   make-html-reports:
     # --execute
     #   execute notebooks before converting them to HTML reports
