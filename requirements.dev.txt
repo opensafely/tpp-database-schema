@@ -400,9 +400,9 @@ six==1.16.0 \
     --hash=sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926 \
     --hash=sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
     # via asttokens
-sqlfluff==3.0.5 \
-    --hash=sha256:5a4a08e4e4dedcadf4f544de83a7edab66e1decf7d946ec5fdbe59db49d6c2fe \
-    --hash=sha256:b7818ea9954d9efc5b2f913df6e3d2270c42532cbad815f73ab582a410d9a39e
+sqlfluff==3.0.6 \
+    --hash=sha256:43805e5b1bfa6425d66f2eac3f34007a5bd259cf3bf4cff1bcfa4e2706055656 \
+    --hash=sha256:fa60e2a16e2500368d4ab98b5246ac85d4542c134413a5e650ed4d356adf7ddd
     # via -r requirements.dev.in
 stack-data==0.5.1 \
     --hash=sha256:5120731a18ba4c82cefcf84a945f6f3e62319ef413bfc210e32aca3a69310ba2 \
