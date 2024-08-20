@@ -32,4 +32,4 @@ skip_glob = [".direnv", "venv", ".venv"]
 
 [tool.sqlfluff.core]
 dialect = "tsql"
-exclude_rules = ["structure.column_order", "references.keywords"]
+exclude_rules = ["structure.column_order", "references.keywords", "capitalisation.identifiers"]
