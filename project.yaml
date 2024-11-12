@@ -50,3 +50,13 @@ actions:
     outputs:
       moderately_sensitive:
         reports: output/*.html
+
+  categorical_columns:
+    run: >
+      sqlrunner:latest
+        --output output/results_categorical_columns.csv
+        --dummy-data-file analysis/dummy_results.csv
+        analysis/query_tpp_categorical_columns.sql
+    outputs:
+      moderately_sensitive:
+        results: output/results_categorical_columns.csv
