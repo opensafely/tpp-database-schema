@@ -51,22 +51,12 @@ actions:
       moderately_sensitive:
         reports: output/*.html
 
-  categorical_columns_core:
+  categorical_columns:
     run: >
       sqlrunner:latest
-        --output output/results_categorical_columns_core.csv
+        --output output/results_categorical_columns.csv
         --dummy-data-file analysis/dummy_results.csv
-        analysis/query_tpp_categorical_columns_core.sql
+        analysis/query_tpp_categorical_columns.sql
     outputs:
       moderately_sensitive:
-        results: output/results_categorical_columns_core.csv
-
-  categorical_columns_tpp:
-    run: >
-      sqlrunner:latest
-        --output output/results_categorical_columns_tpp.csv
-        --dummy-data-file analysis/dummy_results.csv
-        analysis/query_tpp_categorical_columns_tpp.sql
-    outputs:
-      moderately_sensitive:
-        results: output/results_categorical_columns_tpp.csv
+        results: output/results_categorical_columns.csv
