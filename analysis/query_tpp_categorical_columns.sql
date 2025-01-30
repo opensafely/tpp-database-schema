@@ -61,6 +61,12 @@ WITH categorical_columns AS (
         Patient_Classification AS column_value
     FROM APCS
     UNION ALL
+    SELECT DISTINCT
+        'APCS' AS table_name,
+        'Discharge_Destination' AS column_name,
+        Discharge_Destination AS column_value
+    FROM APCS
+    UNION ALL
 
     -- opa
     SELECT DISTINCT
