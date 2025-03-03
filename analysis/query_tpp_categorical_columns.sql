@@ -83,6 +83,12 @@ WITH categorical_columns AS (
     UNION ALL
     SELECT DISTINCT
         'OPA' AS table_name,
+        'Outcome_of_Attendance' AS column_name,
+        Outcome_of_Attendance AS column_value
+    FROM OPA
+    UNION ALL
+    SELECT DISTINCT
+        'OPA' AS table_name,
         'Consultation_Medium_Used' AS column_name,
         Consultation_Medium_Used AS column_value
     FROM OPA
