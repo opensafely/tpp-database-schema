@@ -37,6 +37,17 @@ actions:
         rows: output/decision_support_value_reference.csv
         log: output/decision_support_value_reference_log.json
 
+  vaccination_reference_query:
+    run: >
+      sqlrunner:latest
+        --output output/vaccination_reference.csv
+        --log-file output/vaccination_reference_log.json
+        analysis/vaccination_reference_query.sql
+    outputs:
+      moderately_sensitive:
+        rows: output/vaccination_reference.csv
+        log: output/vaccination_reference_log.json
+
   make-html-reports:
     # --execute
     #   execute notebooks before converting them to HTML reports
@@ -58,6 +69,7 @@ actions:
         analysis/*.ipynb
     needs:
       - query
+      - vaccination_reference_query
     outputs:
       moderately_sensitive:
         reports: output/*.html
