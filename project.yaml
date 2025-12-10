@@ -8,45 +8,45 @@ actions:
     run: >
       sqlrunner:latest
         --output output/rows.csv
-        --log-file output/log.json
+        --log-file logs/log.json
         analysis/query.sql
     outputs:
       moderately_sensitive:
         rows: output/rows.csv
-        log: output/log.json
+        log: logs/log.json
 
   data_dictionary_query:
     run: >
       sqlrunner:latest
         --output output/data_dictionary.csv
-        --log-file output/data_dictionary_log.json
+        --log-file logs/data_dictionary_log.json
         analysis/data_dictionary_query.sql
     outputs:
       moderately_sensitive:
         rows: output/data_dictionary.csv
-        log: output/data_dictionary_log.json
+        log: logs/data_dictionary_log.json
 
   decision_support_value_reference_query:
     run: >
       sqlrunner:latest
         --output output/decision_support_value_reference.csv
-        --log-file output/decision_support_value_reference_log.json
+        --log-file logs/decision_support_value_reference_log.json
         analysis/decision_support_value_reference_query.sql
     outputs:
       moderately_sensitive:
         rows: output/decision_support_value_reference.csv
-        log: output/decision_support_value_reference_log.json
+        log: logs/decision_support_value_reference_log.json
 
   vaccination_reference_query:
     run: >
       sqlrunner:latest
         --output output/vaccination_reference.csv
-        --log-file output/vaccination_reference_log.json
+        --log-file logs/vaccination_reference_log.json
         analysis/vaccination_reference_query.sql
     outputs:
       moderately_sensitive:
         rows: output/vaccination_reference.csv
-        log: output/vaccination_reference_log.json
+        log: logs/vaccination_reference_log.json
 
   make-html-reports:
     # --execute

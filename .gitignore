@@ -105,6 +105,7 @@ model.log
 */input.csv
 __pycache__
 output/*
+logs/*
 metadata/*
 venv/
 .ipynb_checkpoints/
