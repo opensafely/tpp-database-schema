@@ -7,45 +7,45 @@ actions:
   query:
     run: >
       sqlrunner:latest
-        --output output/rows.csv
+        --output output/files_for_release/rows.csv
         --log-file logs/log.json
         analysis/query.sql
     outputs:
       moderately_sensitive:
-        rows: output/rows.csv
+        rows: output/files_for_release/rows.csv
         log: logs/log.json
 
   data_dictionary_query:
     run: >
       sqlrunner:latest
-        --output output/data_dictionary.csv
+        --output output/files_for_release/data_dictionary.csv
         --log-file logs/data_dictionary_log.json
         analysis/data_dictionary_query.sql
     outputs:
       moderately_sensitive:
-        rows: output/data_dictionary.csv
+        rows: output/files_for_release/data_dictionary.csv
         log: logs/data_dictionary_log.json
 
   decision_support_value_reference_query:
     run: >
       sqlrunner:latest
-        --output output/decision_support_value_reference.csv
+        --output output/files_for_release/decision_support_value_reference.csv
         --log-file logs/decision_support_value_reference_log.json
         analysis/decision_support_value_reference_query.sql
     outputs:
       moderately_sensitive:
-        rows: output/decision_support_value_reference.csv
+        rows: output/files_for_release/decision_support_value_reference.csv
         log: logs/decision_support_value_reference_log.json
 
   vaccination_reference_query:
     run: >
       sqlrunner:latest
-        --output output/vaccination_reference.csv
+        --output output/files_for_release/vaccination_reference.csv
         --log-file logs/vaccination_reference_log.json
         analysis/vaccination_reference_query.sql
     outputs:
       moderately_sensitive:
-        rows: output/vaccination_reference.csv
+        rows: output/files_for_release/vaccination_reference.csv
         log: logs/vaccination_reference_log.json
 
   make-html-reports:
@@ -65,21 +65,21 @@ actions:
         --no-input
         --to=html
         --template basic
-        --output-dir=output
+        --output-dir=output/files_for_release
         analysis/*.ipynb
     needs:
       - query
       - vaccination_reference_query
     outputs:
       moderately_sensitive:
-        reports: output/*.html
+        reports: output/files_for_release/*.html
 
   categorical_columns:
     run: >
       sqlrunner:latest
-        --output output/results_categorical_columns.csv
+        --output output/files_for_release/results_categorical_columns.csv
         --dummy-data-file analysis/dummy_results.csv
         analysis/query_tpp_categorical_columns.sql
     outputs:
       moderately_sensitive:
-        results: output/results_categorical_columns.csv
+        results: output/files_for_release/results_categorical_columns.csv
