@@ -1,12 +1,9 @@
-version: "3.0"
-
-expectations:
-  population_size: 1000
+version: "5.0"
 
 actions:
   query:
     run: >
-      sqlrunner:latest
+      sqlrunner:v1
         --output output/files_for_release/rows.csv
         --log-file logs/log.json
         analysis/query.sql
@@ -17,7 +14,7 @@ actions:
 
   data_dictionary_query:
     run: >
-      sqlrunner:latest
+      sqlrunner:v1
         --output output/files_for_release/data_dictionary.csv
         --log-file logs/data_dictionary_log.json
         analysis/data_dictionary_query.sql
@@ -28,7 +25,7 @@ actions:
 
   decision_support_value_reference_query:
     run: >
-      sqlrunner:latest
+      sqlrunner:v1
         --output output/files_for_release/decision_support_value_reference.csv
         --log-file logs/decision_support_value_reference_log.json
         analysis/decision_support_value_reference_query.sql
@@ -39,7 +36,7 @@ actions:
 
   vaccination_reference_query:
     run: >
-      sqlrunner:latest
+      sqlrunner:v1
         --output output/files_for_release/vaccination_reference.csv
         --log-file logs/vaccination_reference_log.json
         analysis/vaccination_reference_query.sql
@@ -60,7 +57,7 @@ actions:
     # --output-dir=output
     #   write HTML reports to the `output` directory
     run: >
-      python:latest jupyter nbconvert
+      python:v2 jupyter nbconvert
         --execute
         --no-input
         --to=html
@@ -76,7 +73,7 @@ actions:
 
   categorical_columns:
     run: >
-      sqlrunner:latest
+      sqlrunner:v1
         --output output/files_for_release/results_categorical_columns.csv
         --dummy-data-file analysis/dummy_results.csv
         analysis/query_tpp_categorical_columns.sql
