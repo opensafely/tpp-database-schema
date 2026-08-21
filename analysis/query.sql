@@ -5,7 +5,7 @@ SELECT
     TableName,
     ColumnName,
     ColumnType,
-    Precision,
+    [Precision],
     Scale,
     MaxLength,
     IsNullable,
